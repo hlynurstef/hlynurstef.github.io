@@ -1,1 +1,400 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>React App</title><link href="/static/css/main.54cdbeb7.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.82322572.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <button onclick="scrollToId('home')" class="w3-bar-item w3-button">HOME</button>
+            <button onclick="scrollToId('about')" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT</button>
+            <button onclick="scrollToId('portfolio')" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> PORTFOLIO</button>
+            <button onclick="scrollToId('contact')" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</button>
+            <!--
+            <button onclick="scrollToId('#')" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </button>
+            -->
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <!--
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+            -->
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-purple w3-xlarge w3-wide w3-animate-opacity w3-opacity-min">
+                HLYNUR STEFÁNSSON</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2 class="w3-center">ABOUT ME</h2>
+        <p class="w3-center">
+            <em>Computer Scientist, Programmer, Game Designer</em>
+        </p>
+        <p class="w3-center">My name is Hlynur Stefánsson, I like designing and making computer games. I live in Reykjavik, Iceland and I'm graduating
+            with a B.Sc. degree in Computer Science in June 2018. I've also got an M.Sc. degree in Human Resource Management
+            but my passion is with designing and programming. In my spare time I like to work out and binge watch episodes
+            on Netflix.
+        </p>
+        <br/>
+        <div class="w3-row">
+            <div class="w3-col w3-center w3-padding-large">
+                <img src="images/avatar.jpg" class="w3-round w3-image box" alt="Photo of Me" width="500" height="333">
+            </div>
+        </div>
+
+        <h2 class="w3-center w3-padding-16">SKILLS</h2>
+        <p class="w3-wide">
+            <i class="fa fa-gamepad"></i>Unity 3D</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-laptop"></i>C#</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+    </div>
+
+    <!--
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">14+</span>
+            <br> Partners
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span>
+            <br> Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span>
+            <br> Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span>
+            <br> Meetings
+        </div>
+    </div>
+    -->
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h2 class="w3-center">GAMES I'VE MADE</h2>
+        <p class="w3-center">
+            <em>Here are some games that I've made by myself or with other people</em>
+        </p>
+        <br>
+
+        <h2 class="w3-padding-32">
+            <img style="width: 23px; margin-bottom: 5px;" src="images/logos/logo-unity.png" alt="Unity logo"> Unity3D games
+        </h2>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://hlynurstef.itch.io/karro-the-curious" target="_blank">
+                    <img src="images/games/karro.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Karro The Curious">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Karro The Curious</h3>
+                <p>A 2d puzzle platformer where you need to travel through portals to solve puzzles.</p>
+                <p>This game was made in a three week course called
+                    <i>Computer Game Design & Development</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://hlynurstef.itch.io/bumpercars-on-ice" target="_blank">
+                    <img src="images/games/bumpercars.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Bumpercars on Ice">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Bumpercars On Ice</h3>
+                <p>A local multiplayer top-down racing game on ice where the goal is to destroy your opponent by bumping into
+                    them or shooting them with guns</p>
+                <p>This game was made in the course
+                    <i>Advanced Game Design & Development</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://hlynurstef.itch.io/mr-dies-vice-roll-o-rama" target="_blank">
+                    <img src="images/games/mr-die.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Mr. Die's Roll'O'Rama">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Mr. Die's Roll'O'Rama (IGI Summer Game Jam 2017)</h3>
+                <p>A local multiplayer plit screen battle arena where you play as dice. The goal is to push your oppenent off
+                    of the platform.</p>
+                <p>This game was made for the
+                    <i>IGI Summer Game Jam 2017</i>
+                    where the theme was
+                    <i>Grow</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://gudjonss.itch.io/robo-soccer" target="_blank">
+                    <img src="images/games/robosoccer.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Robo Soccer">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Robo Soccer</h3>
+                <p>A local multiplayer game where you play as robots in space playing soccer.</p>
+                <p>This game was made in the course
+                    <i>Advanced Game Design & Development</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://globalgamejam.org/2018/games/death-transmission" target="_blank">
+                    <img src="images/games/transmission.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Death in Transmission">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Death in Transmission (Global Game Jam 2018)</h3>
+                <p>A local multiplayer ragdoll physics game where the goal is to knock your opponent off a platform.</p>
+                <p>This game was made for the
+                    <i>Global Game Jam 2018</i>
+                    where the theme was
+                    <i>Transmission</i>
+                </p>
+            </div>
+        </div>
+
+        <h2 class="w3-padding-32">
+            <img style="width: 23px; margin-bottom: 5px;" src="images/logos/logo-python.png" alt="Python logo"> Python (Pygame) games
+        </h2>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://github.com/hlynurstef/Tetris" target="_blank">
+                    <img src="images/games/tetris.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Tetris clone">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Tetris clone</h3>
+                <p>A clone of the GameBoy version of Tetris</p>
+                <p>This game was made in the course
+                    <i>The Programming Language Python</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://github.com/hlynurstef/Space_Invaders" target="_blank">
+                    <img src="images/games/space_invaders.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Space Invaders clone">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Space Invaders clone</h3>
+                <p>A clone of the classic game Space Invaders</p>
+                <p>This game is
+                    <i>unfinished</i>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://github.com/hlynurstef/Snake" target="_blank">
+                    <img src="images/games/snake.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Snake clone">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Snake clone</h3>
+                <p>A clone of the classic game Snake</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://github.com/HolyGrailGames/Invertibles" target="_blank">
+                    <img src="images/games/invertibles.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Invertibles">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Invertibles</h3>
+                <p>A simple top-down RPG style game where the goal is to destroy all of the evil dark elementals</p>
+                <p>This game was made for the
+                    <i>IGI Game Jam 2016</i>
+                    where the theme was
+                    <i>Polar Opposites</i>
+                </p>
+            </div>
+        </div>
+
+        <h2 class="w3-padding-32">
+            <img style="width: 23px; margin-bottom: 5px;" src="images/logos/logo-js.png" alt="JavaScript logo"> JavaScript/CSS games
+        </h2>
+
+        <div class="w3-row-padding w3-section w3-padding-16">
+            <div class="w3-col" style="width: 250px;">
+                <a href="https://www.hlynurstef.com/flappy-bird" target="_blank">
+                    <img src="images/games/flappy.png" class="box" style="width: 210px;" class="w3-hover-opacity" alt="Flappy bird clone">
+                </a>
+            </div>
+            <div class="w3-col" style="width: 350px;">
+                <h3>Flappy bird clone</h3>
+                <p>A clone of the game Flappy Bird</p>
+                <p>This game was made in the course
+                    <i>Web Programming 2</i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <!--
+        <h3 class="w3-center">WHERE I WORK</h3>
+        <p class="w3-center">
+            <em>I'd love your feedback!</em>
+        </p>
+        -->
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <!-- Add Google Maps -->
+                <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Reykjavik, Iceland
+                    <br>
+                    <!--
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515
+                    <br>
+                    -->
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: hlynurstef@gmail.com
+                    <br>
+                </div>
+                <!--
+                <p>Swing by for a cup of
+                    <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity">
+        <button onclick="scrollToId('home')" class="w3-button w3-light-grey">
+            <i class="fa fa-arrow-up w3-margin-right"></i>To the top</button>
+
+        <div class="w3-xlarge w3-section">
+            <p style="margin-bottom: 0;">Lets get in touch. Find me on:</p>
+
+            <a href="https://www.facebook.com/hlynurstef" target="_blank" style="text-decoration: none;">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            </a>
+
+            <a href="https://www.instagram.com/hlynurstef/" target="_blank" style="text-decoration: none;">
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+            </a>
+            <!--
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            -->
+
+
+            <a href="https://twitter.com/hlynurstefans" target="_blank" style="text-decoration: none;">
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/hlynurstef/" target="_blank" style="text-decoration: none;">
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </a>
+            <a href="https://hlynurstef.itch.io/" target="_blank" style="text-decoration: none;">
+                <img class="w3-hover-opacity" style="width: 23px; margin-bottom: 5px;" src="images/logos/logo-itch.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Add Google Maps -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWpbQR07btx5SM4ncOkzMfxs2_v815UIw&callback=myMap"></script>
+
+</body>
+
+</html>
